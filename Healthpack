@@ -1,0 +1,19 @@
+public class Healthpack extends Character
+{
+   private int x;
+   private int y;
+   public Healthpack(int newX, int newY, String newName, int newHp, int newAmmo){
+       super(newX, newY, newName, newHp, newAmmo);
+       newAmmo = 0;
+   }
+   public int getX(){
+    return x;
+    }
+   public int getY(){
+    return y;
+    }
+   public void healChar(Character aChar, Grid grid){
+       aChar.hp++;
+       
+   }
+}

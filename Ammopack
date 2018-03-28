@@ -1,0 +1,19 @@
+public class Ammopack extends Character
+{
+   private int x;
+   private int y;
+   public Ammopack(int newX, int newY, String newName, int newHp, int newAmmo){
+       super(newX, newY, newName, newHp, newAmmo);
+       int ammo = newAmmo;
+   }
+   public int getX(){
+    return x;
+    }
+   public int getY(){
+    return y;
+    }
+   public void refillAmmo(Character aChar, Grid grid){
+       aChar.ammo++;
+       
+   }
+}

@@ -1,0 +1,12 @@
+import java.lang.*;
+public class Collectible extends Character
+{
+    private int x, y;
+   
+    public Collectible(int newX, int newY, String newName, int newHp, int newAmmo){
+     super( newX, newY, newName, newHp, newAmmo);
+     
+    }
+    
+    
+}
